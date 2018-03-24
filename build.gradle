@@ -8,13 +8,18 @@
 
 // Apply the java-library plugin to add support for Java Library
 apply plugin: 'java-library'
+apply plugin:'java'
+apply plugin:'application'
 
+mainClassName = "Main"
 // In this section you declare where to find the dependencies of your project
 repositories {
     // Use jcenter for resolving your dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
 }
+
+
 
 dependencies {
     // This dependency is exported to consumers, that is to say found on their compile classpath.
@@ -27,9 +32,13 @@ dependencies {
     
     compile group: 'org.springframework', name: 'spring-web', version: '4.3.4.RELEASE'
 
+
 	
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
+}
+task stage{
+	dependsOn installDist
 }
 
