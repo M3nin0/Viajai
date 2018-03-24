@@ -1,1 +1,1 @@
-web: ./build/install/app/bin/app
+web: java -jar ./meu_app.jar
