@@ -25,7 +25,7 @@ import model.Model;
 
 public class View implements Observer {
 
-	TelegramBot bot = TelegramBotAdapter.build("523671526:AAF_-NjeCgqItAxRGTtzAVEVxirMysAhS0Q");
+	TelegramBot bot = TelegramBotAdapter.build("TOKEN_TELEGRAM");
 
 	// Object that receives messages
 	GetUpdatesResponse updatesResponse;
