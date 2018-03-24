@@ -1,1 +1,1 @@
-web: java -jar ./meu_app.jar
+web: ./build/install/ViageiroBot/bin/ViageiroBot 
